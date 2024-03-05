@@ -27,10 +27,20 @@
             </div>
             <div>
 
-                <button style="color: blue,"  id="btnLogin" >Login</button>
-                <button style="color: green,">Register</button> </a>
+                <button style="color: blue," id="btnLogin"onclick="alert('Logged Successfully.')">Login</button>
+                <a href="./register.html"><button style="color: green,">Register</button> </a>
 
             </div>
+            <script>
+                //JavaScripyt
+                console.log("Hello World");
+    
+                let buttonLogin = new document.querySelector('#btnLogin');
+                buttonLogin.onclick = function()
+                {
+                    alert("Succesfully Logged In!")
+                };
+            </script>
         </div>
         </body>
     </html>
