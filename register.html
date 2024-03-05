@@ -25,10 +25,20 @@
                 <div style="margin-bottom: 1rem;"><input type="text" placeholder="last name"></div>    
             <div>
 
-                <button style="color: blue," >Cancel</button>
-                <button style="color: green," id="btnLogin" >Register</button>
+                <a href="./index.html"><button style="color: blue," >Cancel</button></a>
+                <a href="./index.html"><button style="color: green,"  id="btnLogin"onclick="alert('Registered Successfully.')">register</button></a>
 
             </div>
+            <script>
+                //JavaScripyt
+                console.log("Hello World");
+    
+                let buttonLogin = new document.querySelector('#btnLogin');
+                buttonLogin.onclick = function()
+                {
+                    alert("Succesfully Logged In!")
+                };
+            </script>
         </div>
         </body>
     </html>
